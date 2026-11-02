@@ -73,3 +73,121 @@
     transform: none;
   }
 }
+
+.site-header {
+  mix-blend-mode: normal;
+}
+
+.desktop-nav,
+.menu-toggle {
+  mix-blend-mode: difference;
+}
+
+.site-header.scrolled .desktop-nav,
+.site-header.scrolled .menu-toggle {
+  mix-blend-mode: normal;
+}
+
+.brand img {
+  display: block;
+  width: 56px;
+  height: auto;
+  filter: brightness(0);
+}
+
+@media (prefers-color-scheme: light) {
+  .brand img {
+    filter: brightness(0);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .brand img {
+    filter: brightness(0) invert(1);
+  }
+}
+
+.interest-list span,
+.section-index,
+.timeline-date,
+.experience-block h3,
+.project-tags span,
+.project-status,
+.about-facts .eyebrow {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Inter, Arial, sans-serif;
+}
+
+.experience-block h3 {
+  font-weight: 700;
+}
+
+.hero-grid {
+  background-image: none;
+  opacity: 0;
+}
+
+.project-tags {
+  gap: 10px 16px;
+}
+
+.project-tags span,
+.interest-list span {
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.interest-list {
+  gap: 14px 22px;
+}
+
+.interest-list span {
+  font-size: 10px;
+  letter-spacing: .04em;
+}
+
+.process-grid {
+  border-top: 0;
+  column-gap: clamp(20px, 3vw, 48px);
+}
+
+.process-step {
+  border-bottom: 0;
+}
+
+.process-step + .process-step {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.contact-link-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.contact-link-label svg {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+}
+
+.nav-link,
+.hero-role {
+  font-family: inherit;
+  text-transform: none;
+}
+
+.about-stamp {
+  background: transparent;
+}
+
+.about-stamp::before,
+.about-stamp::after,
+.art-coleta::after {
+  border: 0;
+}
+
+.esperanca-frame {
+  border: 0;
+}
